@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <button id="show-win-screen-button" class="hidden">🏆</button>
+        <button id="settings-button" class="hidden">⚙️</button>
+
+        <header>
+            <h1>Clicker Simulator</h1>
+            <p>Sua pontuação:</p>
+            <div id="score-display">0</div>
+            <p id="cps-display">0 por segundo</p>
+        </header>
+
+        <main id="main-content">
+            <div id="clicker-section">
+                <button id="click-button">
+                    <img src="https://api.iconify.design/mdi/cursor-default-click.svg?color=%23ffffff" alt="Ícone de Clique">
+                    <span>Clique Aqui!</span>
+                </button>
+            </div>
+            <div id="upgrades-section">
+                <h2>Loja de Upgrades</h2>
+                <div id="upgrades-list"></div>
+            </div>
+        </main>
+
+        <div id="settings-panel">
+            <button id="close-settings-button">×</button>
+            <h2>Configurações</h2>
+            <div class="config-group">
+                <label for="config-score">Pontuação Atual:</label>
+                <input type="number" id="config-score">
+            </div>
+            <div class="config-group">
+                <label for="config-cpc">Pontos por Clique (CPC):</label>
+                <input type="number" id="config-cpc">
+            </div>
+            <div class="config-group">
+                <label for="config-cps">Pontos por Segundo (CPS):</label>
+                <input type="number" id="config-cps">
+            </div>
+            <button id="save-settings-button">Salvar e Fechar</button>
+            <div class="data-management">
+                <h3>Gerenciamento de Dados (Admin)</h3>
+                <p>Cole os dados do save abaixo para importar ou clique para exportar.</p>
+                <textarea id="data-console" rows="3" placeholder="Cole os dados do save aqui..."></textarea>
+                <div class="data-buttons">
+                    <button id="import-data-button">Importar</button>
+                    <button id="export-data-button">Exportar para Clipboard</button>
+                </div>
+            </div>
+            <button id="reset-progress-button" class="danger">Resetar Meu Progresso</button>
+        </div>
+    </div>
+
+    <div id="win-screen">
+        <div class="win-box">
+            <h1>🎉 Parabéns! 🎉</h1>
+            <p>Você atingiu a meta e terminou o Clicker Simulator!</p>
+            <div class="win-buttons">
+                <button id="continue-playing-button">Continuar Jogando</button>
+                <button id="restart-win-button" class="danger">Recomeçar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
