@@ -1,4 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('dblclick', function(event) {
+    event.preventDefault();
+}, { passive: false });
+
+document.addEventListener('DOMContentLoaded', async () => {
 
     // --- CONFIGURAÇÃO ---
     // Adicione aqui os IPs que terão acesso ao painel de configurações.
