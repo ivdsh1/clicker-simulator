@@ -37,12 +37,6 @@ header h1 { color: #1a73e8; margin-top: 0; }
     padding-right: 10px;
     -webkit-overflow-scrolling: touch; /* Correção para rolagem no celular */
 }
-#upgrades-list {
-    max-height: 350px;
-    overflow-y: auto;
-    padding-right: 10px;
-    -webkit-overflow-scrolling: touch; /* Correção para rolagem no celular */
-}
 .upgrade-item { background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s; }
 .upgrade-details h3 { margin: 0 0 5px 0; font-size: 1.1em; }
 .upgrade-details p { margin: 0; color: #555; font-size: 0.9em; }
