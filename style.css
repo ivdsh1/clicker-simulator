@@ -1,5 +1,16 @@
 /* Estilos Gerais */
-body { font-family: 'Poppins', sans-serif; background-color: #f0f2f5; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; user-select: none; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    user-select: none; /* Impede a seleção de texto */
+    touch-action: manipulation; /* <<< CORREÇÃO APLICADA AQUI PARA O ZOOM */
+}
 #game-container { background-color: #ffffff; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); width: 90%; max-width: 800px; text-align: center; position: relative; }
 
 /* Header */
@@ -20,7 +31,7 @@ header h1 { color: #1a73e8; margin-top: 0; }
     max-height: 350px;
     overflow-y: auto;
     padding-right: 10px;
-    -webkit-overflow-scrolling: touch; /* <<< CORREÇÃO APLICADA AQUI */
+    -webkit-overflow-scrolling: touch; /* CORREÇÃO PARA ROLAGEM NO CELULAR */
 }
 .upgrade-item { background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s; }
 .upgrade-details h3 { margin: 0 0 5px 0; font-size: 1.1em; }
